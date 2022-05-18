@@ -95,7 +95,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"📑 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📑", callback_data="ignore")
+            InlineKeyboardButton(f"📝 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📑", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -1639,15 +1639,15 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('👨‍💼𝙼𝚢 𝙳𝚎𝚟', url='https://t.me/malayalammoviesmmms'),
-            InlineKeyboardButton('𝚂𝚘𝚞𝚛𝚌𝚎 𝙲𝚘𝚍𝚎🧾', url ='https://t.me/LXRBOTSGROUP')
+            InlineKeyboardButton('👨‍💼𝙼𝚢 𝙳𝚎𝚟', url='https://t.me/cinemaclubcc'),
+            InlineKeyboardButton('channel📺', url ='https://t.me/Cinema_Club_Post')
         ],[
             InlineKeyboardButton('⚙️𝙷𝚎𝚕𝚙⚙️', callback_data="help")
         ],[
-            InlineKeyboardButton('🗣️𝙰𝚗𝚢 𝙳𝚘𝚞𝚋𝚝', url='https://t.me/LXRBOTSGROUP'),
-            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜🤖', url='https://t.me/LXRYOUTUBERYT')
+            InlineKeyboardButton('🗣️Movie group', url='https://t.me/MMCINEMACHAKKU'),
+            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜💞', url='https://t.me/malayali00l')
         ],[
-            InlineKeyboardButton('🍂 REPO 🍂️', url='https://t.me/LXRBOTSGROUP')
+            InlineKeyboardButton('🍂 CINEMA CLUB Group 🍂️', url='https://t.me/MM_CINEMA_CLUB_GROUP')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1680,10 +1680,10 @@ async def callback_data(bot, update: CallbackQuery):
 
     elif query_data == "about": 
         buttons = [[
-            InlineKeyboardButton('👤 LXR YOUTUBER AMAL', url='https://t.me/LXRBOTSGROUP'),
-            InlineKeyboardButton('Support 👤', url='https://t.me/LXRBOTSGROUP')
+            InlineKeyboardButton('👤 Owner ', url='https://t.me/cinemaclubcc'),
+            InlineKeyboardButton('channel 📺', url='https://t.me/malayali00l')
         ],[
-            InlineKeyboardButton('🍂 REPO 🍂', url='https://t.me/LXRYOUTUBERYT')
+            InlineKeyboardButton('🍂 CINEMA CLUB GROUP 🍂', url='https://t.me/MMCINEMACHAKKU')
         ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('Close 🔐', callback_data='close')
