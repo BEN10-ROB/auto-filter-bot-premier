@@ -28,14 +28,14 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
+                caption = f" {file_name}‚"
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/LXRBOTSGROUP"
+                                    '[MM] CINEMA CLUB', url="https://t.me/+yP9ckmsoGF1kNDNl"
                                 )
                         ]
                     ]
@@ -47,10 +47,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/LXRBOTSGROUP'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/LXR-YOUTUBER-AMAL/auto-filter-bot-premier')
+        InlineKeyboardButton('Developers', url='https://t.me/cinemaclubcc'),
+        InlineKeyboardButton('Channel 📺', url ='https://t.me/malayali00l')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/LXRYOUTUBERYT')
+        InlineKeyboardButton('Support Group 👥', url='https://t.me/MMCINEMACHAKKU')
     ],[
         InlineKeyboardButton('Help ⚙', callback_data="help")
     ]]
